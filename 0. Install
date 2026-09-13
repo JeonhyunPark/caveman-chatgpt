@@ -1,0 +1,66 @@
+# Install Caveman for ChatGPT
+
+1. Open ChatGPT.
+
+2. Go to:
+
+   `Plugins` → `Add` → `Marketplace`
+
+3. Choose the Git repository option.
+
+4. Enter the following values:
+
+   **Repository**  
+   `https://github.com/JeonhyunPark/caveman-chatgpt`
+
+   **Git ref**  
+   `main`
+
+   **Sparse path**  
+   Leave this field empty.
+
+5. Add the marketplace.
+
+6. After the repository is imported, locate the Caveman plugin/skill in the marketplace and install or enable it.
+
+## Why Sparse path is empty
+
+The repository root contains the marketplace manifest required by ChatGPT.
+
+Do not enter:
+
+`skills/caveman`
+
+or
+
+`plugins/caveman`
+
+as the Sparse path.
+
+Doing so may cause an error such as:
+
+`marketplace root does not contain a supported manifest`
+
+## Verify installation
+
+After installation, start a new ChatGPT conversation and try:
+
+`caveman`
+
+or:
+
+`caveman ultra`
+
+Then ask a normal question and confirm that the response is compressed according to Caveman rules.
+
+To disable Caveman mode, use:
+
+`stop caveman`
+
+## Required values
+
+```text
+Repository: https://github.com/JeonhyunPark/caveman-chatgpt
+Git ref: main
+Sparse path: <leave empty>
+```
