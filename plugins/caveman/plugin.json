@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "caveman",
+  "version": "0.1.0",
+  "description": "Ultra-compressed response style that preserves technical accuracy.",
+  "author": {
+    "name": "Julius Brussee",
+    "url": "https://github.com/JuliusBrussee"
+  },
+  "homepage": "https://github.com/JuliusBrussee/caveman",
+  "license": "MIT",
+  "keywords": [
+    "caveman",
+    "compression",
+    "concise",
+    "skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Caveman",
+        "shortDescription": "Shorter answers without losing technical accuracy",
+        "longDescription": "Compress response prose while preserving code, commands, paths, identifiers, errors, numbers, conditions, and task order.",
+        "developerName": "Julius Brussee",
+        "defaultPrompt": [
+          "caveman",
+          "caveman lite",
+          "caveman ultra"
+        ]
+      }
+    }
+  }
+}
